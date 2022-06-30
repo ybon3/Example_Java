@@ -18,10 +18,6 @@ public class GoogleAnalyticsService extends BaseService {
 		String url = "https://www.googleapis.com/oauth2/v3/token";
 
 		Map<String,String> params = new HashMap<>();
-		params.put("grant_type", "refresh_token");
-		params.put("client_secret", "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");
-		params.put("client_id", "148566443529-7ivruks0kp67lhfeisj2h4ig7h693nul.apps.googleusercontent.com");
-		params.put("refresh_token", "1//0eqcPsWjY01UHCgYIARAAGA4SNwF-L9IrUOTB_FihHcFbADi-yK3_y4GKgcrpt6pgHgAKk5JrUCfZB_v-WiCPL4Jt9GAGN0lC61Q");
 		GoogleAnalyticsResp response = RESTClient.postForm(url, params, GoogleAnalyticsResp.class);
 		logger.info("access_token: " + response.access_token);
 
