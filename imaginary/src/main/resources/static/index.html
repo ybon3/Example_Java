@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Get your greeting <a href="/greeting">here</a></p>
+<hr size="1" />
+
+<p>ZIP 檔上傳</p>
+<form enctype="multipart/form-data" method="POST" action="zip_upload">
+	<input type="number" name="limit" value="10" min="10" max="100" />
+	<br/>
+	<input type="file" name="zip_file" accept=".png, .zip" />
+	<br/>
+	<input type="submit" />
+</form>
+<hr size="1" />
+
+</body>
+</html>
