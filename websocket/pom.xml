@@ -26,7 +26,6 @@
 	
 	<properties>
 		<java.version>1.8</java.version>
-		<docker.image.prefix>nkgcontainerregistryeastasia.azurecr.io</docker.image.prefix>
 		<build.finalName>${project.artifactId}</build.finalName>
 		
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -71,14 +70,14 @@
 			<!-- [START cloudrun_helloworld_jib] -->
 			<!-- [START run_helloworld_jib] -->
 			<plugin>
-			<groupId>com.google.cloud.tools</groupId>
-			<artifactId>jib-maven-plugin</artifactId>
-			<version>3.2.1</version>
-			<configuration>
-				<to>
-					<image>gcr.io/PROJECT_ID/websocket</image>
-				</to>
-			</configuration>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.2.1</version>
+				<configuration>
+					<to>
+						<image>gcr.io/PROJECT_ID/websocket</image>
+					</to>
+				</configuration>
 			</plugin>
 			<!-- [END run_helloworld_jib] -->
 			<!-- [END cloudrun_helloworld_jib] -->
