@@ -42,7 +42,7 @@ public class RESTClient {
 	 */
 	public static <T> T request(HttpMethod method, String url, String input, Class<T> responseType) {
 		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON_UTF8);
+		headers.setContentType(MediaType.APPLICATION_JSON);
 		return request(method, url, headers, input, responseType);
 	}
 

@@ -9,7 +9,7 @@ import com.nkg.ventilator.pojo.APIAuth;
 public class APIAuthService extends BaseService {
 
 	public static final APIAuth FAKE = new APIAuth();
-	public static final Integer FAKE_INT = new Integer(1);
+	public static final Integer FAKE_INT = Integer.valueOf(1);
 
 	public HashMap<BU, APIAuth> getStatus() {
 		HashMap<BU, APIAuth> map = new HashMap<>();
